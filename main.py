@@ -27,7 +27,7 @@ if result.status_code == ok:
             ## print(security)
 
             if tags:
-                if "NotScriptable" in tags:
+                if "NotScriptable" in tags or "Hidden" in tags:
                     print(member["Name"] + ": " + rbxClass["Name"])
                     continue
             if member["MemberType"] == "Property":
